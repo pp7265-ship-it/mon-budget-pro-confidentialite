@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suppression des données | Mon Budget Pro</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#19314e;background:#f4f8fc}body{margin:0}header{background:linear-gradient(120deg,#113e7a,#2378ba);color:white;padding:45px 20px}main{max-width:800px;margin:-18px auto 40px;background:white;padding:30px;border-radius:16px;box-shadow:0 6px 30px #153c6a18}h1{margin:0 0 8px}h2{color:#14538f;margin-top:30px}p,li{line-height:1.65}a{color:#1769a6}.wrap{max-width:800px;margin:auto}.lang{display:flex;gap:10px;margin-bottom:24px}button{border:1px solid #1769a6;background:white;color:#1769a6;padding:9px 16px;border-radius:8px;cursor:pointer}button.active{background:#1769a6;color:white}.note{background:#edf5fd;border-left:4px solid #2378ba;padding:14px;border-radius:5px}footer{color:#61758a;font-size:.9rem;margin-top:30px}@media(max-width:650px){main{margin:0;padding:22px;border-radius:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Mon Budget Pro</h1><p id="subtitle">Suppression des données de l'utilisateur</p></div></header>
+<main>
+<div class="lang"><button id="frbtn" class="active" onclick="show('fr')">Français</button><button id="enbtn" onclick="show('en')">English</button></div>
+<section id="fr">
+<h2>Comment supprimer vos données</h2>
+<p>Mon Budget Pro enregistre les comptes, transactions et budgets sur votre appareil. Le développeur ne conserve pas de copie de vos données financières sur ses propres serveurs.</p>
+<h2>1. Supprimer les données de votre appareil</h2>
+<ol><li>Ouvrez <strong>Mon Budget Pro</strong>.</li><li>Appuyez sur les <strong>trois petites lignes (☰)</strong> en haut à gauche pour ouvrir le menu.</li><li>Sélectionnez <strong>Paramètres</strong>.</li><li>Dans la section <strong>Données</strong>, appuyez sur le bouton rouge <strong>Effacer toutes les données</strong>.</li><li>Confirmez la suppression si l’application le demande.</li></ol>
+<p>Cette action supprime les données financières stockées localement dans l'application. Elle ne supprime pas automatiquement les sauvegardes conservées dans Google Drive.</p>
+<h2>2. Supprimer les sauvegardes Google Drive (facultatif)</h2>
+<p>Si vous avez activé la sauvegarde Google Drive, vous devez aussi supprimer les fichiers de sauvegarde de votre propre compte Google Drive. Selon l'emplacement utilisé par l'application, ils peuvent se trouver dans les fichiers visibles de Drive ou dans les données d'application masquées. Vous pouvez consulter les paramètres de gestion des applications de Google Drive et supprimer les données associées à Mon Budget Pro, si cette option est disponible.</p>
+<p>La suppression des données locales ne supprime pas automatiquement les sauvegardes Drive. La suppression d'une sauvegarde Drive n'efface pas automatiquement les données encore présentes sur vos appareils.</p>
+<h2>3. Demander de l'aide pour la suppression</h2>
+<p>Pour obtenir de l'aide ou demander des précisions sur la suppression de vos données, écrivez à <a href="mailto:patp.devapps@gmail.com?subject=Mon%20Budget%20Pro%20-%20Suppression%20des%20donn%C3%A9es">patp.devapps@gmail.com</a> avec l'objet « Mon Budget Pro — Suppression des données ».</p>
+<div class="note"><strong>Important :</strong> Nous ne pouvons pas supprimer à distance les données enregistrées uniquement sur votre appareil ou dans votre compte Google Drive. Nous pouvons toutefois vous guider dans les étapes.</div>
+<h2>Données supprimées et conservées</h2>
+<p><strong>Supprimées par l'action dans l'application :</strong> données financières enregistrées localement (comptes, transactions, budgets et informations connexes). <strong>Conservées jusqu'à suppression distincte :</strong> sauvegardes éventuellement présentes dans votre compte Google Drive. Le développeur ne conserve pas de données financières sur ses serveurs et n'applique donc aucune période de conservation à ces données.</p>
+</section>
+<section id="en" hidden>
+<h2>How to delete your data</h2>
+<p>Mon Budget Pro stores accounts, transactions, and budgets on your device. The developer does not keep a copy of your financial data on developer-operated servers.</p>
+<h2>1. Delete data from your device</h2>
+<ol><li>Open <strong>Mon Budget Pro</strong>.</li><li>Tap the <strong>three-line menu (☰)</strong> in the top-left corner.</li><li>Select <strong>Settings</strong>.</li><li>In the <strong>Data</strong> section, tap the red <strong>Erase all data</strong> button (label may vary with the app language).</li><li>Confirm the deletion if prompted.</li></ol>
+<p>This deletes financial data stored locally in the app. It does not automatically delete backups stored in Google Drive.</p>
+<h2>2. Delete Google Drive backups (optional)</h2>
+<p>If you enabled Google Drive backup, you must also delete the backup files from your own Google Drive account. Depending on where the app stores them, they may appear as visible Drive files or hidden app data. You can review Google Drive's app-management settings and delete data associated with Mon Budget Pro if that option is available.</p>
+<p>Deleting local data does not automatically remove Drive backups. Deleting a Drive backup does not automatically erase data that remains on your devices.</p>
+<h2>3. Request help with deletion</h2>
+<p>For assistance or questions about deleting your data, email <a href="mailto:patp.devapps@gmail.com?subject=Mon%20Budget%20Pro%20-%20Data%20deletion">patp.devapps@gmail.com</a> with the subject “Mon Budget Pro — Data deletion”.</p>
+<div class="note"><strong>Important:</strong> We cannot remotely delete data stored only on your device or in your Google Drive account. We can, however, guide you through the steps.</div>
+<h2>Data deleted and retained</h2>
+<p><strong>Deleted by the in-app action:</strong> locally stored financial data (accounts, transactions, budgets, and related information). <strong>Retained until separately deleted:</strong> any backups in your Google Drive account. The developer does not retain financial data on developer-operated servers and therefore does not set a retention period for that data.</p>
+</section>
+<footer><a href="./">Politique de confidentialité / Privacy policy</a> · Mon Budget Pro</footer>
+</main>
+<script>function show(lang){document.getElementById('fr').hidden=lang!=='fr';document.getElementById('en').hidden=lang!=='en';document.getElementById('frbtn').classList.toggle('active',lang==='fr');document.getElementById('enbtn').classList.toggle('active',lang==='en');document.documentElement.lang=lang;document.getElementById('subtitle').textContent=lang==='fr'?"Suppression des données de l'utilisateur":"User data deletion"}</script>
+</body></html>
